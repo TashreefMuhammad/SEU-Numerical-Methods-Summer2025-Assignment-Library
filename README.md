@@ -11,19 +11,19 @@
 | 5 | Linear Regression via Normal Equations + LU | ν - Nu | [Topic 05](https://github.com/sushmita129/linearRegression) |
 | 6 | QR Decomposition for Least Squares | τ	- Tau | [Topic 06](https://github.com/hasansamzid07/cse261qrleastsquares-Tau)|
 | 7 | Gauss-Seidel and SOR methods | β - Beta | [Topic 07](https://github.com/H-A-Prohor/Numerical-Assignment-7)|
-| 8 | Linearizing nonlinear functions for regression | ξ - Xi | |
-| 9 | Cubic Spline vs Lagrange Interpolation | φ	- Phi | |
-| 10 | Trapezoidal Rule (∫ e^(-x²)) | γ - Gamma | |
+| 8 | Linearizing nonlinear functions for regression | ξ - Xi | [Topic 08](https://github.com/Humayra-Hasib/cse261-numerical.methode) |
+| 9 | Cubic Spline vs Lagrange Interpolation | φ	- Phi | [Topic 09](https://github.com/NusratRushba/Numerical_method_assignment) |
+| 10 | Trapezoidal Rule (∫ e^(-x²)) | γ - Gamma | [Topic 10](https://github.com/sharmin-08/Gamma) |
 | 11 | Simpson’s Rule vs Trapezoidal Rule | δ - Delta | [Topic 11](https://github.com/sajidahmed2176/Num.github) |
-| 12 | Logistic Regression from scratch (GD) | μ - Mu | [Topic 12](https://github.com/FardinShuvro/gradient-checking-logistic-regression) |
+| 12 | Logistic Regression from scratch (GD) | μ - Mu | [Topic 12](https://github.com/heyarafat/Logistic_Regression) |
 | 13 | Ridge Regression via Normal Equations | ρ	- Rho | [Topic 13](https://github.com/Charm77/Ridge_Regression) |
 | 14 | Lasso Regression via Gradient Descent | ο	- Omicron | |
-| 15 | GD vs Newton’s Method on Logistic Regression | π	- Pi | |
+| 15 | GD vs Newton’s Method on Logistic Regression | π	- Pi | [Topic 15](https://github.com/Fahim-F25/NM-Assignment) |
 | 16 | SGD vs Batch GD on Linear Regression | χ	- Chi | |
-| 17 | Gradient Checking (finite differences) | λ - Lambda | |
+| 17 | Gradient Checking (finite differences) | λ - Lambda | [Topic 17](https://github.com/FardinShuvro/gradient-checking-logistic-regression) |
 | 18 | Eigen Decomposition → PCA | σ	- Sigma | [Topic 18](https://github.com/nazmul-dev-coder/University-Project) |
 | 19 | Numerical Differentiation (F, B, C formulas) | ζ - Zeta | [Topic 19](https://github.com/Nahid-01/zeta) |
-| 20 | Jacobi Eigenvalue Algorithm | υ	- Upsilon | |
+| 20 | Jacobi Eigenvalue Algorithm | υ	- Upsilon | [Topic 20](https://github.com/BilashxD/Jacobi-Algo) |
 | 21 | Euler vs RK4 for ODE dy/dx = -2y | θ - Theta | [Topic 21](https://github.com/mehedihasanovi222/-Numerical-Assignment) |
 | 22 | Richardson Extrapolation on Trapezoidal Rule | κ - Kappa | [Topic 22](https://github.com/2022200000149-rantu/Richardson-Trapezoidal) |
 
