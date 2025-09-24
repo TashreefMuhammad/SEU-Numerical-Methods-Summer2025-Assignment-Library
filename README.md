@@ -8,14 +8,14 @@
 | 2 | Modified Secant Method vs Secant Method | ι - Iota | [Topic 02](https://github.com/rafizakhatun121/-the-Modified-Secant-Method-cse261.4-) |
 | 3 | Modified Newton-Raphson Method vs classical NR | η - Eta | [Topic 03](https://github.com/Taslim-392/Newton--Raphson)|
 | 4 | Cases where NR and False Position fail | ε - Epsilon | [Topic 04](https://github.com/Md-HridoyNur/Epsilon-RootFailureFinding-Assignment) |
-| 5 | Linear Regression via Normal Equations + LU | ν - Nu | |
-| 6 | QR Decomposition for Least Squares | τ	- Tau | |
+| 5 | Linear Regression via Normal Equations + LU | ν - Nu | [Topic 05](https://github.com/sushmita129/linearRegression) |
+| 6 | QR Decomposition for Least Squares | τ	- Tau | [Topic 06](https://github.com/hasansamzid07/cse261qrleastsquares-Tau)|
 | 7 | Gauss-Seidel and SOR methods | β - Beta | [Topic 07](https://github.com/H-A-Prohor/Numerical-Assignment-7)|
 | 8 | Linearizing nonlinear functions for regression | ξ - Xi | |
 | 9 | Cubic Spline vs Lagrange Interpolation | φ	- Phi | |
 | 10 | Trapezoidal Rule (∫ e^(-x²)) | γ - Gamma | |
-| 11 | Simpson’s Rule vs Trapezoidal Rule | δ - Delta | |
-| 12 | Logistic Regression from scratch (GD) | μ - Mu | |
+| 11 | Simpson’s Rule vs Trapezoidal Rule | δ - Delta | [Topic 11](https://github.com/sajidahmed2176/Num.github) |
+| 12 | Logistic Regression from scratch (GD) | μ - Mu | [Topic 12](https://github.com/FardinShuvro/gradient-checking-logistic-regression) |
 | 13 | Ridge Regression via Normal Equations | ρ	- Rho | [Topic 13](https://github.com/Charm77/Ridge_Regression) |
 | 14 | Lasso Regression via Gradient Descent | ο	- Omicron | |
 | 15 | GD vs Newton’s Method on Logistic Regression | π	- Pi | |
