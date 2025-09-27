@@ -17,9 +17,9 @@
 | 11 | Simpson’s Rule vs Trapezoidal Rule | δ - Delta | [Topic 11](https://github.com/sajidahmed2176/Num.github) |
 | 12 | Logistic Regression from scratch (GD) | μ - Mu | [Topic 12](https://github.com/heyarafat/Logistic_Regression) |
 | 13 | Ridge Regression via Normal Equations | ρ	- Rho | [Topic 13](https://github.com/Charm77/Ridge_Regression) |
-| 14 | Lasso Regression via Gradient Descent | ο	- Omicron | |
+| 14 | Lasso Regression via Gradient Descent | ο	- Omicron | [Topic 14](https://github.com/shazzad098/CSE261-Lasso-Ridge-Regression-) |
 | 15 | GD vs Newton’s Method on Logistic Regression | π	- Pi | [Topic 15](https://github.com/Fahim-F25/NM-Assignment) |
-| 16 | SGD vs Batch GD on Linear Regression | χ	- Chi | |
+| 16 | SGD vs Batch GD on Linear Regression | χ	- Chi | [Topic 16](https://github.com/Tanvir-Rhayan/GROUP-CHI) |
 | 17 | Gradient Checking (finite differences) | λ - Lambda | [Topic 17](https://github.com/FardinShuvro/gradient-checking-logistic-regression) |
 | 18 | Eigen Decomposition → PCA | σ	- Sigma | [Topic 18](https://github.com/nazmul-dev-coder/University-Project) |
 | 19 | Numerical Differentiation (F, B, C formulas) | ζ - Zeta | [Topic 19](https://github.com/Nahid-01/zeta) |
