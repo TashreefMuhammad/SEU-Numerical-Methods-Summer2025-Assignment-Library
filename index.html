@@ -76,12 +76,13 @@
   const q      = document.getElementById('q');
   const sortEl = document.getElementById('sort');
 
-  /** Small helper to create elements */
+  // Small DOM helper
   function el(tag, attrs = {}, ...kids){
     const e = document.createElement(tag);
     for (const [k,v] of Object.entries(attrs)) {
       if (k === 'class') e.className = v;
       else if (k === 'html') e.innerHTML = v;
+      else if (k === 'ariaLabel') e.setAttribute('aria-label', v);
       else e.setAttribute(k, v);
     }
     for (const k of kids.flat()) {
@@ -91,19 +92,20 @@
     return e;
   }
 
-  /** Render cards */
   function render(list){
     grid.innerHTML = '';
     if (!list.length) {
       grid.appendChild(el('div', {class: 'muted'}, 'No projects found.'));
       return;
     }
-    list.forEach(item => {
-      const title = el('h3', {class: 'title'}, item.name || item.path);
-      const path  = el('div', {class: 'path'}, item.path || '');
-      const head  = el('div', {class: 'head'}, title, path);
 
-      const contribWrap = el('div', {class: 'contributors'});
+    list.forEach(item => {
+      const displayTitle = item.title || item.name || item.path || 'Untitled Project';
+      const title = el('h3', {class:'title'}, displayTitle);
+      const path  = el('div', {class:'path'}, item.path || '');
+      const head  = el('div', {class:'head'}, title, path);
+
+      const contribWrap = el('div', {class:'contributors'});
       if (Array.isArray(item.contributors) && item.contributors.length) {
         item.contributors.forEach(c => {
           contribWrap.appendChild(
@@ -117,7 +119,7 @@
         contribWrap.appendChild(el('span', {class:'muted'}, 'No contributors listed'));
       }
 
-      const body  = el('div', {class: 'body'},
+      const body  = el('div', {class:'body'},
         el('div', {class:'pill'}, `Last update: ${item.updatedAt ? new Date(item.updatedAt).toLocaleString() : '—'}`),
         item.description ? el('div', {class:'muted'}, item.description) : null,
         contribWrap
@@ -126,12 +128,10 @@
       const open  = el('a', {class:'btn', href:item.url, target:'_blank', rel:'noopener'}, 'Open Project');
       const foot  = el('div', {class:'foot'}, open, el('span', {class:'muted'}, ''));
 
-      const card  = el('article', {class: 'card'}, head, body, foot);
-      grid.appendChild(card);
+      grid.appendChild(el('article', {class:'card'}, head, body, foot));
     });
   }
 
-  /** Filter + sort */
   function filterAndSort(items){
     const query = (q.value || '').trim().toLowerCase();
     const mode  = sortEl.value;
@@ -139,37 +139,47 @@
     let list = items.slice();
     if (query) {
       list = list.filter(it => {
-        const inName   = (it.name || '').toLowerCase().includes(query);
-        const inPath   = (it.path || '').toLowerCase().includes(query);
-        const inDesc   = (it.description || '').toLowerCase().includes(query);
-        const inContrib= (it.contributors || []).some(c => (c.login || '').toLowerCase().includes(query));
-        return inName || inPath || inDesc || inContrib;
+        const text = [
+          it.title || '', it.name || '', it.path || '', it.description || '',
+          ...(it.contributors || []).map(c => c.login || '')
+        ].join(' ').toLowerCase();
+        return text.includes(query);
       });
     }
     if (mode === 'name') {
-      list.sort((a,b) => (a.name || a.path || '').localeCompare(b.name || b.path || ''));
+      list.sort((a,b) => (a.title || a.name || a.path || '').localeCompare(b.title || b.name || b.path || ''));
     } else {
       list.sort((a,b) => new Date(b.updatedAt || 0) - new Date(a.updatedAt || 0));
     }
     render(list);
   }
 
-  /** Boot */
-  fetch('./projects.json', {cache:'no-store'})
-    .then(r => {
-      if (!r.ok) throw new Error(r.status + ' ' + r.statusText);
-      return r.json();
-    })
-    .then(items => {
-      status.style.display = 'none';
-      render(items);
-      q.addEventListener('input', () => filterAndSort(items));
-      sortEl.addEventListener('change', () => filterAndSort(items));
-    })
-    .catch(err => {
-      status.textContent = '⚠️ Failed to load projects.json: ' + err.message;
+  // Load data (projects + overrides) and render
+  Promise.all([
+    fetch('./projects.json',  {cache:'no-store'}).then(r => { if(!r.ok) throw new Error(r.status+' '+r.statusText); return r.json(); }),
+    fetch('./overrides.json', {cache:'no-store'}).then(r => r.ok ? r.json() : {})
+  ])
+  .then(([items, overrides]) => {
+    // Merge overrides by exact path (preferred) or by name as fallback
+    items.forEach(it => {
+      const ov = overrides[it.path] || overrides[it.name];
+      if (!ov) return;
+      if (ov.title) it.title = ov.title;
+      if (ov.description) it.description = ov.description;
+      // keep it minimal—no group badge logic since titles already include text like "[Group α]"
     });
+
+    status.style.display = 'none';
+    render(items);
+
+    q.addEventListener('input', () => filterAndSort(items));
+    sortEl.addEventListener('change', () => filterAndSort(items));
+  })
+  .catch(err => {
+    status.textContent = '⚠️ Failed to load data: ' + err.message;
+  });
 })();
 </script>
+
 </body>
 </html>

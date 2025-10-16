@@ -1,0 +1,68 @@
+{
+    "ASHFIQUL005/Team-Alpha_Numerical_Assignment": {
+        "title": "[Group α] Modified False Position vs Secant"
+    },
+    "rafizakhatun121/-the-Modified-Secant-Method-cse261.4-": {
+        "title": "[Group ι] Modified Secant Method vs Secant"
+    },
+    "Taslim-392/Newton--Raphson": {
+        "title": "[Group η] Modified Newton–Raphson vs Classical NR"
+    },
+    "Md-HridoyNur/Epsilon-RootFailureFinding-Assignment": {
+        "title": "[Group ε] Failure Cases of NR & False Position"
+    },
+    "sushmita129/linearRegression": {
+        "title": "[Group ν] Linear Regression via Normal Eq. + LU"
+    },
+    "hasansamzid07/cse261qrleastsquares-Tau": {
+        "title": "[Group τ] Least Squares with QR Decomposition"
+    },
+    "H-A-Prohor/Numerical-Assignment-7": {
+        "title": "[Group β] Gauss–Seidel and SOR"
+    },
+    "Humayra-Hasib/cse261-numerical.methode": {
+        "title": "[Group ξ] Linearization for Regression"
+    },
+    "NusratRushba/Numerical_method_assignment": {
+        "title": "[Group φ] Cubic Spline vs Lagrange Interpolation"
+    },
+    "sharmin-08/Gamma": {
+        "title": "[Group γ] Trapezoidal Rule on ∫e^(−x²)"
+    },
+    "sajidahmed2176/Num.github": {
+        "title": "[Group δ] Simpson’s vs Trapezoid"
+    },
+    "heyarafat/Logistic_Regression": {
+        "title": "[Group μ] Logistic Regression from Scratch (GD)"
+    },
+    "Charm77/Ridge_Regression": {
+        "title": "[Group ρ] Ridge Regression (Normal Equations)"
+    },
+    "shazzad098/CSE261-Lasso-Ridge-Regression-": {
+        "title": "[Group ο] Lasso Regression (Gradient Descent)"
+    },
+    "Fahim-F25/NM-Assignment": {
+        "title": "[Group π] GD vs Newton on Logistic Regression"
+    },
+    "Tanvir-Rhayan/GROUP-CHI": {
+        "title": "[Group χ] SGD vs Batch GD on Linear Regression"
+    },
+    "FardinShuvro/gradient-checking-logistic-regression": {
+        "title": "[Group λ] Gradient Checking (Finite Differences)"
+    },
+    "nazmul-dev-coder/University-Project": {
+        "title": "[Group σ] Eigen Decomposition → PCA"
+    },
+    "Nahid-01/zeta": {
+        "title": "[Group ζ] Numerical Differentiation (F/B/C)"
+    },
+    "BilashxD/Jacobi-Algo": {
+        "title": "[Group υ] Jacobi Eigenvalue Algorithm"
+    },
+    "mehedihasanovi222/-Numerical-Assignment": {
+        "title": "[Group θ] ODE Solvers: Euler vs RK4"
+    },
+    "2022200000149-rantu/Richardson-Trapezoidal": {
+        "title": "[Group κ] Richardson Extrapolation (Trapezoid)"
+    }
+}
