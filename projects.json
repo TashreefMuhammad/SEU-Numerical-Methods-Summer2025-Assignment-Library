@@ -423,6 +423,45 @@
     ]
   },
   {
+    "name": "Logistic-Regression",
+    "path": "Fahim-F25/NM-Assignment",
+    "url": "https://github.com/Fahim-F25/Logistic-Regression",
+    "updatedAt": "2025-09-24T17:38:19Z",
+    "description": "",
+    "contributors": [
+      {
+        "login": "Fahim-F25",
+        "avatar_url": "https://avatars.githubusercontent.com/u/124146828?v=4",
+        "html_url": "https://github.com/Fahim-F25"
+      },
+      {
+        "login": "Evan-074",
+        "avatar_url": "https://avatars.githubusercontent.com/u/234016497?v=4",
+        "html_url": "https://github.com/Evan-074"
+      },
+      {
+        "login": "ankhi13",
+        "avatar_url": "https://avatars.githubusercontent.com/u/234114797?v=4",
+        "html_url": "https://github.com/ankhi13"
+      },
+      {
+        "login": "sajid-3959",
+        "avatar_url": "https://avatars.githubusercontent.com/u/228281450?v=4",
+        "html_url": "https://github.com/sajid-3959"
+      },
+      {
+        "login": "Hasan-edu",
+        "avatar_url": "https://avatars.githubusercontent.com/u/232009468?v=4",
+        "html_url": "https://github.com/Hasan-edu"
+      },
+      {
+        "login": "mehtahul19",
+        "avatar_url": "https://avatars.githubusercontent.com/u/234115222?v=4",
+        "html_url": "https://github.com/mehtahul19"
+      }
+    ]
+  },
+  {
     "name": "Newton--Raphson",
     "path": "Taslim-392/Newton--Raphson",
     "url": "https://github.com/Taslim-392/Newton--Raphson",
@@ -458,45 +497,6 @@
         "login": "mdrabiulhasan043",
         "avatar_url": "https://avatars.githubusercontent.com/u/232642749?v=4",
         "html_url": "https://github.com/mdrabiulhasan043"
-      }
-    ]
-  },
-  {
-    "name": "NM-Assignment",
-    "path": "Fahim-F25/NM-Assignment",
-    "url": "https://github.com/Fahim-F25/NM-Assignment",
-    "updatedAt": "2025-09-24T17:38:19Z",
-    "description": "",
-    "contributors": [
-      {
-        "login": "Fahim-F25",
-        "avatar_url": "https://avatars.githubusercontent.com/u/124146828?v=4",
-        "html_url": "https://github.com/Fahim-F25"
-      },
-      {
-        "login": "Evan-074",
-        "avatar_url": "https://avatars.githubusercontent.com/u/234016497?v=4",
-        "html_url": "https://github.com/Evan-074"
-      },
-      {
-        "login": "ankhi13",
-        "avatar_url": "https://avatars.githubusercontent.com/u/234114797?v=4",
-        "html_url": "https://github.com/ankhi13"
-      },
-      {
-        "login": "sajid-3959",
-        "avatar_url": "https://avatars.githubusercontent.com/u/228281450?v=4",
-        "html_url": "https://github.com/sajid-3959"
-      },
-      {
-        "login": "Hasan-edu",
-        "avatar_url": "https://avatars.githubusercontent.com/u/232009468?v=4",
-        "html_url": "https://github.com/Hasan-edu"
-      },
-      {
-        "login": "mehtahul19",
-        "avatar_url": "https://avatars.githubusercontent.com/u/234115222?v=4",
-        "html_url": "https://github.com/mehtahul19"
       }
     ]
   },
